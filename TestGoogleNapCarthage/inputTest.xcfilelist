@@ -1,0 +1,9 @@
+#  inputTest.xcfilelist
+#  TestGoogleNapCarthage
+#
+#  Created by CHAIWAT CHANTHASEN on 27/4/2563 BE.
+#  Copyright © 2563 CHAIWAT CHANTHASEN. All rights reserved.
+
+# This file may be set as an input or output file list for a shell script build phase.
+# List file paths below; one per line. These paths will be considered inputs or outputs for the script phase.
+# Build settings will be expanded, e.g. $(SRCROOT)/fileName

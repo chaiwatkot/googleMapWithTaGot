@@ -1,0 +1,15 @@
+#
+# Carthage support binary only frameworks
+#
+# The sources of the binaries can be located on the developer page of Google at the following locations:
+#
+# https://developers.google.com/maps/documentation/ios-sdk/start#install-manually
+# https://developers.google.com/places/ios-sdk/start#install-manually
+#
+# Instead of clicking on the link to download the SDK, mouse over the it and select "Copy link",
+# then create a JSON file for each dependency with the version number and URL copied.
+#
+# See GoogleMaps.json and GooglePlaces.json in this bundle
+#
+binary "GoogleMaps.json" ~> 3.8.0
+binary "GooglePlaces.json" ~> 3.8.0

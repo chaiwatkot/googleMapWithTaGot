@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZCg-2X-UPj">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Map View Controller-->
+        <scene sceneID="uYJ-qI-dwl">
+            <objects>
+                <viewController storyboardIdentifier="MapViewController" id="ZCg-2X-UPj" customClass="MapViewController" customModule="TestGoogleNapCarthage" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ew4-9N-cAj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KTW-Tj-cSJ" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YM2-OG-lxq">
+                                <rect key="frame" x="0.0" y="814" width="414" height="48"/>
+                                <color key="backgroundColor" red="0.46274509800000002" green="0.19215686269999999" blue="0.75686274509999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="rko-4h-dPp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="24"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Confirm"/>
+                                <connections>
+                                    <action selector="SelectedJa" destination="ZCg-2X-UPj" eventType="touchUpInside" id="Wum-FZ-13S"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="KTW-Tj-cSJ" firstAttribute="top" secondItem="W6b-Ek-z4N" secondAttribute="top" id="4Q4-SS-k5O"/>
+                            <constraint firstItem="KTW-Tj-cSJ" firstAttribute="leading" secondItem="W6b-Ek-z4N" secondAttribute="leading" id="8yR-SY-Pr5"/>
+                            <constraint firstItem="W6b-Ek-z4N" firstAttribute="bottom" secondItem="YM2-OG-lxq" secondAttribute="bottom" id="M9P-9q-7ga"/>
+                            <constraint firstItem="W6b-Ek-z4N" firstAttribute="bottom" secondItem="KTW-Tj-cSJ" secondAttribute="bottom" id="RSe-o7-DCa"/>
+                            <constraint firstItem="YM2-OG-lxq" firstAttribute="leading" secondItem="W6b-Ek-z4N" secondAttribute="leading" id="ZxA-eh-Awf"/>
+                            <constraint firstItem="W6b-Ek-z4N" firstAttribute="trailing" secondItem="YM2-OG-lxq" secondAttribute="trailing" id="dqN-W8-bYp"/>
+                            <constraint firstItem="W6b-Ek-z4N" firstAttribute="trailing" secondItem="KTW-Tj-cSJ" secondAttribute="trailing" id="kay-EG-Lty"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="W6b-Ek-z4N"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xHO-Ob-aVg"/>
+                    <connections>
+                        <outlet property="mapView" destination="KTW-Tj-cSJ" id="lmp-ql-FQB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MzA-cs-RHZ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="499" y="130"/>
+        </scene>
+    </scenes>
+</document>

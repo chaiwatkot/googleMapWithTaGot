@@ -1,0 +1,4 @@
+$(SRCROOT)/Carthage/Build/iOS/GoogleMaps.framework
+$(SRCROOT)/Carthage/Build/iOS/GoogleMapsBase.framework
+$(SRCROOT)/Carthage/Build/iOS/GoogleMapsCore.framework
+$(SRCROOT)/Carthage/Build/iOS/GooglePlaces.framework
